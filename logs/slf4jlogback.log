@@ -1,0 +1,1477 @@
+17.11.2021 14:51:46.568 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 14:51:46.618 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 14:51:46.711 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 14:51:46.712 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 14:51:46.714 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 14:51:46.858 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 14:51:46.863 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 14:51:46.865 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 14:51:46.875 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 14:51:46.888 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 14:51:46.892 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 14:51:46.893 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 14:51:46.893 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 14:51:46.894 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 14:51:46.901 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 14:51:46.911 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 14:51:46.931 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 14:51:46.948 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 14:51:46.975 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 14:51:46.976 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 14:51:46.976 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 14:51:46.977 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 14:51:46.977 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 14:51:46.977 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 14:51:46.977 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 14:51:46.977 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 14:51:46.978 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 14:51:46.979 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 14:51:46.986 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 14:51:46.986 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 14:51:46.986 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 14:51:46.987 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 14:51:46.987 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 14:51:46.988 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 14:51:46.988 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 14:51:46.988 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 14:51:46.989 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 14:51:46.989 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 14:51:46.989 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 14:51:46.989 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 14:51:46.989 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 14:51:46.990 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 14:51:46.990 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 14:51:46.990 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 14:51:46.990 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 14:51:46.990 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 14:51:46.991 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 14:51:46.991 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 14:51:46.991 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 14:51:46.991 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 14:51:46.992 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 14:51:46.992 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 14:51:46.992 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 14:51:46.995 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 14:51:47.072 [main] DEBUG  c.z.h.pool.PoolBase - HikariPool-1 - Failed to create/setup connection: Could not connect to address=(host=localhost)(port=3306)(type=master) : Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+17.11.2021 14:51:47.076 [main] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Cannot acquire connection from data source
+java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=localhost)(port=3306)(type=master) : Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:194)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1394)
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:635)
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:89)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig.dataSource(SpringConfig.java:38)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$82f21ff1.CGLIB$dataSource$1(<generated>)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$82f21ff1$$FastClassBySpringCGLIB$$4b763392.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$82f21ff1.dataSource(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:93)
+	at by.itacademy.javaenterprise.kotkovski.DaoRunner.main(DaoRunner.java:10)
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:185)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:257)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:521)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1389)
+	... 50 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:252)
+	... 52 common frames omitted
+17.11.2021 14:51:48.077 [main] ERROR  c.z.h.p.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=localhost)(port=3306)(type=master) : Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:194)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1394)
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:635)
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:89)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig.dataSource(SpringConfig.java:38)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$82f21ff1.CGLIB$dataSource$1(<generated>)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$82f21ff1$$FastClassBySpringCGLIB$$4b763392.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$82f21ff1.dataSource(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:93)
+	at by.itacademy.javaenterprise.kotkovski.DaoRunner.main(DaoRunner.java:10)
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:185)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:257)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:521)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1389)
+	... 50 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:252)
+	... 52 common frames omitted
+17.11.2021 14:51:48.079 [main] WARN   o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carRepositoryImpl': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Could not connect to address=(host=localhost)(port=3306)(type=master) : Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+17.11.2021 14:55:26.649 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 14:55:26.669 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 14:55:26.757 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 14:55:26.759 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 14:55:26.761 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 14:55:26.883 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 14:55:26.887 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 14:55:26.890 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 14:55:26.908 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 14:55:26.929 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 14:55:26.933 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 14:55:26.933 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 14:55:26.933 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 14:55:26.934 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 14:55:26.944 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 14:55:26.955 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 14:55:26.974 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 14:55:26.989 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 14:55:27.021 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 14:55:27.022 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 14:55:27.023 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 14:55:27.023 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 14:55:27.023 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 14:55:27.023 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 14:55:27.024 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 14:55:27.024 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 14:55:27.024 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 14:55:27.025 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 14:55:27.029 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 14:55:27.029 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 14:55:27.030 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 14:55:27.030 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 14:55:27.030 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 14:55:27.030 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 14:55:27.031 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 14:55:27.031 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 14:55:27.031 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 14:55:27.031 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 14:55:27.032 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 14:55:27.032 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 14:55:27.032 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 14:55:27.032 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 14:55:27.032 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 14:55:27.032 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 14:55:27.033 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 14:55:27.033 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 14:55:27.033 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 14:55:27.033 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 14:55:27.033 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 14:55:27.034 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 14:55:27.034 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 14:55:27.034 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 14:55:27.034 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 14:55:27.036 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 14:55:27.251 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5f7b97da
+17.11.2021 14:55:27.256 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 14:55:27.262 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 14:55:27.282 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 14:55:27.332 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 14:55:27.335 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 14:55:27.359 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 14:55:27.397 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7607d0
+17.11.2021 14:55:27.415 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@eb1f9ae
+17.11.2021 14:55:27.432 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@a8e6ca0
+17.11.2021 14:55:27.450 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@4f8cf395
+17.11.2021 14:55:27.467 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7f742533
+17.11.2021 14:55:27.485 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7e09dffa
+17.11.2021 15:03:27.295 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6adbc9d
+17.11.2021 15:03:27.315 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 15:03:27.382 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 15:03:27.384 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 15:03:27.386 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 15:03:27.497 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 15:03:27.500 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 15:03:27.503 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 15:03:27.511 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 15:03:27.523 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:03:27.526 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:03:27.526 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:03:27.527 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:03:27.527 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:03:27.536 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 15:03:27.571 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 15:03:27.586 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 15:03:27.598 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 15:03:27.626 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 15:03:27.626 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 15:03:27.626 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 15:03:27.626 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 15:03:27.626 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 15:03:27.627 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 15:03:27.627 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 15:03:27.627 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 15:03:27.627 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 15:03:27.628 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 15:03:27.634 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 15:03:27.635 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 15:03:27.635 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 15:03:27.635 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 15:03:27.635 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 15:03:27.635 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 15:03:27.636 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 15:03:27.636 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 15:03:27.636 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 15:03:27.636 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 15:03:27.637 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 15:03:27.637 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 15:03:27.637 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 15:03:27.637 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 15:03:27.637 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 15:03:27.638 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 15:03:27.638 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 15:03:27.638 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 15:03:27.638 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 15:03:27.639 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 15:03:27.639 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 15:03:27.639 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 15:03:27.639 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 15:03:27.639 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 15:03:27.639 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 15:03:27.641 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 15:03:27.833 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5c00384f
+17.11.2021 15:03:27.841 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 15:03:27.844 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 15:03:27.867 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 15:03:27.893 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 15:03:27.897 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 15:03:39.103 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 15:03:39.113 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@15090727
+17.11.2021 15:03:39.134 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@54340d1c
+17.11.2021 15:03:39.156 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@652a1a3e
+17.11.2021 15:03:39.179 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@341bf253
+17.11.2021 15:03:39.202 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@183d7c1
+17.11.2021 15:03:39.227 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@30552ae1
+17.11.2021 15:03:39.251 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7564aa81
+17.11.2021 15:03:39.278 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@9b886f6
+17.11.2021 15:03:39.302 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@1e88a79
+17.11.2021 15:03:39.325 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@41251c05
+17.11.2021 15:03:39.349 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@155136ae
+17.11.2021 15:03:39.373 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@4d096894
+17.11.2021 15:03:39.400 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7f5c09fc
+17.11.2021 15:03:39.417 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@71d3549c
+17.11.2021 15:03:39.438 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7c88f14
+17.11.2021 15:03:39.456 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@69fb295c
+17.11.2021 15:03:39.472 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@6afa8b25
+17.11.2021 15:03:39.487 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@522dadef
+17.11.2021 15:03:39.502 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@d514813
+17.11.2021 15:03:39.512 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - After adding stats (total=20, active=0, idle=20, waiting=0)
+17.11.2021 15:03:53.069 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6adbc9d
+17.11.2021 15:03:53.085 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 15:03:53.166 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 15:03:53.167 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 15:03:53.169 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 15:03:53.322 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 15:03:53.334 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 15:03:53.339 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 15:03:53.350 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 15:03:53.375 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:03:53.383 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:03:53.384 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:03:53.385 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:03:53.386 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:03:53.406 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 15:03:53.559 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 15:03:53.609 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 15:03:53.659 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 15:03:53.738 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 15:03:53.739 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 15:03:53.739 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 15:03:53.739 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 15:03:53.740 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 15:03:53.740 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 15:03:53.740 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 15:03:53.740 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 15:03:53.740 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 15:03:53.743 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 15:03:53.758 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 15:03:53.758 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 15:03:53.758 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 15:03:53.759 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 15:03:53.759 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 15:03:53.759 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 15:03:53.759 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 15:03:53.760 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 15:03:53.760 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 15:03:53.760 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 15:03:53.760 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 15:03:53.761 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 15:03:53.761 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 15:03:53.761 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 15:03:53.761 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 15:03:53.761 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 15:03:53.761 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 15:03:53.762 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 15:03:53.762 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 15:03:53.762 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 15:03:53.762 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 15:03:53.763 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 15:03:53.763 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 15:03:53.763 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 15:03:53.763 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 15:03:53.774 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 15:03:54.261 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5c00384f
+17.11.2021 15:03:54.269 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 15:03:54.293 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 15:03:54.314 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 15:03:54.330 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 15:05:26.421 [HikariPool-1 housekeeper] WARN   c.z.h.p.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m56s250ms).
+17.11.2021 15:07:47.049 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 15:07:47.054 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 15:07:47.067 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@6410db1b
+17.11.2021 15:07:47.087 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@252dd120
+17.11.2021 15:07:47.113 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@14c236c1
+17.11.2021 15:07:47.135 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@45022e6f
+17.11.2021 15:07:50.426 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 15:07:50.442 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 15:07:50.518 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 15:07:50.522 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 15:07:50.525 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 15:07:50.661 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 15:07:50.671 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 15:07:50.676 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 15:07:50.685 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 15:07:50.698 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:07:50.702 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:07:50.703 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:07:50.703 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:07:50.704 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:07:50.717 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 15:07:50.732 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 15:07:50.750 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 15:07:50.763 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 15:07:50.785 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 15:07:50.786 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 15:07:50.786 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 15:07:50.786 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 15:07:50.787 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 15:07:50.787 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 15:07:50.787 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 15:07:50.787 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 15:07:50.787 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 15:07:50.788 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 15:07:50.793 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 15:07:50.793 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 15:07:50.793 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 15:07:50.793 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 15:07:50.794 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 15:07:50.794 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 15:07:50.794 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 15:07:50.794 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 15:07:50.795 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 15:07:50.795 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 15:07:50.798 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 15:07:50.798 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 15:07:50.798 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 15:07:50.799 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 15:07:50.799 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 15:07:50.799 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 15:07:50.799 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 15:07:50.799 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 15:07:50.799 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 15:07:50.800 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 15:07:50.800 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 15:07:50.800 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 15:07:50.800 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 15:07:50.800 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 15:07:50.801 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 15:07:50.806 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 15:07:50.947 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5f7b97da
+17.11.2021 15:07:50.957 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 15:07:50.963 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 15:07:50.978 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 15:07:51.009 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 15:07:51.012 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 15:07:51.059 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 15:07:51.069 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5b5034f3
+17.11.2021 15:07:51.087 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5597c1e9
+17.11.2021 15:07:51.099 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing SQL query [select id, first_name, last_name, tel_number from Customer]
+17.11.2021 15:07:51.103 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@51a85f83
+17.11.2021 15:07:51.107 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 15:07:51.119 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@14aacbd2
+17.11.2021 15:07:51.124 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'id' to property 'id' of type 'java.lang.Integer'
+17.11.2021 15:07:51.129 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'first_name' to property 'firstName' of type 'java.lang.String'
+17.11.2021 15:07:51.132 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'last_name' to property 'lastName' of type 'java.lang.String'
+17.11.2021 15:07:51.132 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'tel_number' to property 'telNumber' of type 'java.lang.String'
+17.11.2021 15:07:51.138 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@4e878218
+17.11.2021 15:07:51.160 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@25749aa8
+17.11.2021 15:07:51.179 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@36b38dc2
+17.11.2021 15:07:51.203 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7485349d
+17.11.2021 15:12:03.466 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 15:12:03.485 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 15:12:03.551 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 15:12:03.553 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 15:12:03.554 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 15:12:03.634 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 15:12:03.635 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 15:12:03.637 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 15:12:03.642 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 15:12:03.651 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:12:03.653 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:12:03.653 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:12:03.654 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:12:03.654 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 15:12:03.660 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 15:12:03.666 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 15:12:03.679 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 15:12:03.690 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 15:12:03.723 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 15:12:03.725 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 15:12:03.726 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 15:12:03.726 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 15:12:03.727 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 15:12:03.727 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 15:12:03.727 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 15:12:03.727 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 15:12:03.727 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 15:12:03.728 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 15:12:03.738 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 15:12:03.738 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 15:12:03.739 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 15:12:03.739 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 15:12:03.739 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 15:12:03.739 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 15:12:03.740 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 15:12:03.740 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 15:12:03.740 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 15:12:03.741 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 15:12:03.741 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 15:12:03.742 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 15:12:03.743 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 15:12:03.743 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 15:12:03.743 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 15:12:03.744 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 15:12:03.744 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 15:12:03.744 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 15:12:03.744 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 15:12:03.744 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 15:12:03.745 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 15:12:03.745 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 15:12:03.745 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 15:12:03.745 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 15:12:03.746 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 15:12:03.748 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 15:12:03.902 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5f7b97da
+17.11.2021 15:12:03.913 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 15:12:03.920 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 15:12:03.938 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 15:12:03.964 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 15:12:03.968 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 15:12:04.012 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 15:12:04.036 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7f3e5fa8
+17.11.2021 15:12:04.057 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@71f9ae3f
+17.11.2021 15:12:04.080 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@75c634d8
+17.11.2021 15:12:04.081 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing SQL query [select id, first_name, last_name, tel_number from Customer]
+17.11.2021 15:12:04.087 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 15:12:04.100 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@30c4a404
+17.11.2021 15:12:04.103 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'id' to property 'id' of type 'java.lang.Integer'
+17.11.2021 15:12:04.107 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'first_name' to property 'firstName' of type 'java.lang.String'
+17.11.2021 15:12:04.108 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'last_name' to property 'lastName' of type 'java.lang.String'
+17.11.2021 15:12:04.109 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'tel_number' to property 'telNumber' of type 'java.lang.String'
+17.11.2021 15:12:04.138 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@3d8a6eab
+17.11.2021 19:31:34.096 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 19:31:34.116 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 19:31:34.194 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 19:31:34.195 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 19:31:34.196 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 19:31:34.296 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 19:31:34.299 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 19:31:34.300 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 19:31:34.309 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 19:31:34.323 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 19:31:34.326 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 19:31:34.327 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 19:31:34.327 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 19:31:34.328 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 19:31:34.337 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 19:31:34.347 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 19:31:34.369 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 19:31:34.381 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 19:31:34.407 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 19:31:34.407 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 19:31:34.407 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 19:31:34.407 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 19:31:34.408 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 19:31:34.408 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 19:31:34.408 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 19:31:34.408 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 19:31:34.408 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 19:31:34.409 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 19:31:34.413 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 19:31:34.413 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 19:31:34.413 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 19:31:34.414 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 19:31:34.414 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 19:31:34.414 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 19:31:34.414 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 19:31:34.414 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 19:31:34.414 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 19:31:34.414 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 19:31:34.414 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 19:31:34.415 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 19:31:34.415 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 19:31:34.415 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 19:31:34.415 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 19:31:34.415 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 19:31:34.415 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 19:31:34.415 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 19:31:34.416 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 19:31:34.416 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 19:31:34.416 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 19:31:34.416 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 19:31:34.416 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 19:31:34.416 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 19:31:34.416 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 19:31:34.419 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 19:31:34.492 [main] DEBUG  c.z.h.pool.PoolBase - HikariPool-1 - Failed to create/setup connection: Could not connect to address=(host=localhost)(port=3306)(type=master) : Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+17.11.2021 19:31:34.495 [main] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Cannot acquire connection from data source
+java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=localhost)(port=3306)(type=master) : Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:194)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1394)
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:635)
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:89)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig.dataSource(SpringConfig.java:38)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$a59ba79a.CGLIB$dataSource$1(<generated>)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$a59ba79a$$FastClassBySpringCGLIB$$43288567.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$a59ba79a.dataSource(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:93)
+	at by.itacademy.javaenterprise.kotkovski.DaoRunner.main(DaoRunner.java:10)
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:185)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:257)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:521)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1389)
+	... 50 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:252)
+	... 52 common frames omitted
+17.11.2021 19:31:35.501 [main] ERROR  c.z.h.p.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=localhost)(port=3306)(type=master) : Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:194)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1394)
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:635)
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:89)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig.dataSource(SpringConfig.java:38)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$a59ba79a.CGLIB$dataSource$1(<generated>)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$a59ba79a$$FastClassBySpringCGLIB$$43288567.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig$$EnhancerBySpringCGLIB$$a59ba79a.dataSource(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:93)
+	at by.itacademy.javaenterprise.kotkovski.DaoRunner.main(DaoRunner.java:10)
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:185)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:257)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:521)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1389)
+	... 50 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:252)
+	... 52 common frames omitted
+17.11.2021 19:31:35.505 [main] WARN   o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carRepositoryImpl': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in by.itacademy.javaenterprise.kotkovski.configuration.SpringConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Could not connect to address=(host=localhost)(port=3306)(type=master) : Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)
+17.11.2021 21:24:10.180 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 21:24:10.203 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 21:24:10.270 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 21:24:10.272 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 21:24:10.274 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 21:24:10.357 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 21:24:10.359 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 21:24:10.361 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 21:24:10.367 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 21:24:10.376 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:24:10.378 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:24:10.379 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:24:10.379 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:24:10.379 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:24:10.386 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 21:24:10.393 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 21:24:10.408 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 21:24:10.423 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 21:24:10.448 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 21:24:10.449 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 21:24:10.449 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 21:24:10.449 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 21:24:10.449 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 21:24:10.450 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 21:24:10.450 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 21:24:10.450 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 21:24:10.450 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 21:24:10.451 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 21:24:10.454 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 21:24:10.455 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 21:24:10.455 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 21:24:10.455 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 21:24:10.455 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 21:24:10.455 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 21:24:10.455 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 21:24:10.456 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 21:24:10.456 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 21:24:10.456 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 21:24:10.456 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 21:24:10.456 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 21:24:10.456 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 21:24:10.457 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 21:24:10.457 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 21:24:10.457 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 21:24:10.457 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 21:24:10.457 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 21:24:10.458 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 21:24:10.458 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 21:24:10.458 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 21:24:10.458 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 21:24:10.458 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 21:24:10.458 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 21:24:10.459 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 21:24:10.460 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 21:24:10.596 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5f7b97da
+17.11.2021 21:24:10.600 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 21:24:10.604 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 21:24:10.613 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 21:24:10.633 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 21:24:10.636 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 21:24:10.701 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 21:24:10.713 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7b6d0aa4
+17.11.2021 21:24:10.731 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@75aafbb9
+17.11.2021 21:24:10.748 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@719561d4
+17.11.2021 21:24:10.760 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL query
+17.11.2021 21:24:10.761 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, tel_number from Customer where id = ?]
+17.11.2021 21:24:10.765 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@3497f182
+17.11.2021 21:24:10.768 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 21:24:10.781 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@27bcf59e
+17.11.2021 21:24:10.797 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@569a5e3
+17.11.2021 21:24:10.802 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'id' to property 'id' of type 'java.lang.Integer'
+17.11.2021 21:24:10.807 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'first_name' to property 'firstName' of type 'java.lang.String'
+17.11.2021 21:24:10.809 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'last_name' to property 'lastName' of type 'java.lang.String'
+17.11.2021 21:24:10.810 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'tel_number' to property 'telNumber' of type 'java.lang.String'
+17.11.2021 21:24:10.814 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5fa8ff5b
+17.11.2021 21:24:10.834 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@54b80ecd
+17.11.2021 21:24:27.598 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 21:24:27.614 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 21:24:27.685 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 21:24:27.687 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 21:24:27.688 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 21:24:27.778 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 21:24:27.780 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 21:24:27.783 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 21:24:27.791 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 21:24:27.801 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:24:27.804 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:24:27.805 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:24:27.806 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:24:27.806 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:24:27.816 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 21:24:27.823 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 21:24:27.850 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 21:24:27.865 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 21:24:27.893 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 21:24:27.893 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 21:24:27.893 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 21:24:27.893 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 21:24:27.894 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 21:24:27.894 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 21:24:27.894 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 21:24:27.894 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 21:24:27.894 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 21:24:27.895 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 21:24:27.899 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 21:24:27.900 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 21:24:27.900 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 21:24:27.900 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 21:24:27.900 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 21:24:27.901 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 21:24:27.901 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 21:24:27.901 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 21:24:27.901 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 21:24:27.902 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 21:24:27.902 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 21:24:27.902 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 21:24:27.902 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 21:24:27.903 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 21:24:27.903 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 21:24:27.903 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 21:24:27.903 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 21:24:27.903 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 21:24:27.904 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 21:24:27.904 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 21:24:27.904 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 21:24:27.904 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 21:24:27.904 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 21:24:27.905 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 21:24:27.905 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 21:24:27.907 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 21:24:28.082 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5f7b97da
+17.11.2021 21:24:28.087 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 21:24:28.091 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 21:24:28.101 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 21:24:28.125 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 21:24:28.128 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 21:24:28.194 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 21:24:28.210 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@4b5d8b61
+17.11.2021 21:24:28.231 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@459a7c7a
+17.11.2021 21:24:28.242 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL query
+17.11.2021 21:24:28.242 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, tel_number from Customer where id = ?]
+17.11.2021 21:24:28.246 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 21:24:28.255 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@41a5e011
+17.11.2021 21:24:28.280 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@4a77641
+17.11.2021 21:41:16.767 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 21:41:16.792 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 21:41:16.854 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 21:41:16.856 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 21:41:16.857 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 21:41:16.938 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 21:41:16.939 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 21:41:16.941 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 21:41:16.947 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 21:41:16.956 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:41:16.959 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:41:16.959 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:41:16.960 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:41:16.960 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:41:16.966 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 21:41:16.972 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 21:41:16.988 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 21:41:17.001 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 21:41:17.028 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 21:41:17.029 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 21:41:17.029 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 21:41:17.029 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 21:41:17.029 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 21:41:17.029 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 21:41:17.029 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 21:41:17.029 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 21:41:17.029 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 21:41:17.030 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 21:41:17.034 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 21:41:17.034 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 21:41:17.034 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 21:41:17.035 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 21:41:17.035 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 21:41:17.035 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 21:41:17.035 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 21:41:17.035 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 21:41:17.035 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 21:41:17.036 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 21:41:17.036 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 21:41:17.036 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 21:41:17.036 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 21:41:17.036 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 21:41:17.036 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 21:41:17.037 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 21:41:17.038 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 21:41:17.039 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 21:41:17.039 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 21:41:17.039 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 21:41:17.039 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 21:41:17.039 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 21:41:17.040 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 21:41:17.040 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 21:41:17.040 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 21:41:17.041 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 21:41:17.165 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5f7b97da
+17.11.2021 21:41:17.168 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 21:41:17.171 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 21:41:17.178 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 21:41:17.188 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 21:41:17.190 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 21:41:17.268 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 21:41:17.291 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@377f6396
+17.11.2021 21:41:17.298 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL query
+17.11.2021 21:41:17.300 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, tel_number from Customer where id = ?]
+17.11.2021 21:41:17.309 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 21:41:17.313 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@39b89b09
+17.11.2021 21:41:17.335 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@3d8708e6
+17.11.2021 21:41:17.355 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@78859132
+17.11.2021 21:41:43.159 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 21:41:43.171 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 21:41:43.232 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 21:41:43.233 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 21:41:43.234 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 21:41:43.308 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 21:41:43.310 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 21:41:43.311 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 21:41:43.316 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 21:41:43.324 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:41:43.326 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:41:43.326 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:41:43.327 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:41:43.327 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:41:43.332 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 21:41:43.338 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 21:41:43.351 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 21:41:43.360 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 21:41:43.386 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 21:41:43.386 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 21:41:43.386 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 21:41:43.386 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 21:41:43.387 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 21:41:43.387 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 21:41:43.387 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 21:41:43.387 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 21:41:43.387 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 21:41:43.388 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 21:41:43.394 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 21:41:43.395 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 21:41:43.395 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 21:41:43.395 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 21:41:43.395 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 21:41:43.395 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 21:41:43.396 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 21:41:43.396 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 21:41:43.396 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 21:41:43.397 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 21:41:43.397 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 21:41:43.397 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 21:41:43.397 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 21:41:43.398 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 21:41:43.398 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 21:41:43.398 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 21:41:43.398 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 21:41:43.399 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 21:41:43.400 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 21:41:43.400 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 21:41:43.400 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 21:41:43.401 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 21:41:43.401 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 21:41:43.401 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 21:41:43.401 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 21:41:43.405 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 21:41:43.531 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5f7b97da
+17.11.2021 21:41:43.533 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 21:41:43.537 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 21:41:43.543 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 21:41:43.553 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 21:41:43.554 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 21:41:43.639 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL query
+17.11.2021 21:41:43.636 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 21:41:43.641 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, tel_number from Customer where id = ?]
+17.11.2021 21:41:43.650 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 21:41:43.676 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@3b2b2812
+17.11.2021 21:41:43.700 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'id' to property 'id' of type 'java.lang.Integer'
+17.11.2021 21:41:43.700 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@35ecd107
+17.11.2021 21:41:43.709 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'first_name' to property 'firstName' of type 'java.lang.String'
+17.11.2021 21:41:43.712 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'last_name' to property 'lastName' of type 'java.lang.String'
+17.11.2021 21:41:43.713 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'tel_number' to property 'telNumber' of type 'java.lang.String'
+17.11.2021 21:41:43.728 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@31d34362
+17.11.2021 21:41:43.745 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@74d1db3c
+17.11.2021 21:51:39.072 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 21:51:39.089 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 21:51:39.146 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 21:51:39.147 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 21:51:39.149 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 21:51:39.222 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 21:51:39.224 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 21:51:39.225 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 21:51:39.230 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 21:51:39.238 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:51:39.240 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:51:39.241 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:51:39.241 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:51:39.241 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:51:39.246 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 21:51:39.253 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 21:51:39.265 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 21:51:39.276 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 21:51:39.309 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 21:51:39.309 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 21:51:39.310 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 21:51:39.310 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 21:51:39.310 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 21:51:39.311 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 21:51:39.311 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 21:51:39.311 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 21:51:39.312 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 21:51:39.313 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 21:51:39.321 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 21:51:39.322 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 21:51:39.322 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 21:51:39.322 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 21:51:39.323 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 21:51:39.323 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 21:51:39.323 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 21:51:39.323 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 21:51:39.324 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 21:51:39.325 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 21:51:39.327 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 21:51:39.327 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 21:51:39.327 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 21:51:39.327 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 21:51:39.327 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 21:51:39.328 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 21:51:39.328 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 21:51:39.328 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 21:51:39.329 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 21:51:39.329 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 21:51:39.329 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 21:51:39.329 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 21:51:39.329 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 21:51:39.329 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 21:51:39.329 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 21:51:39.331 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 21:51:39.464 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5c10f1c3
+17.11.2021 21:51:39.471 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 21:51:39.475 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 21:51:39.483 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 21:51:39.505 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 21:51:39.507 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 21:51:39.577 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 21:51:39.594 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@4b5d8b61
+17.11.2021 21:51:39.615 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@459a7c7a
+17.11.2021 21:51:39.639 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@41a5e011
+17.11.2021 21:51:39.658 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@4a77641
+17.11.2021 21:51:39.667 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL query
+17.11.2021 21:51:39.668 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, tel_number from Customer where id = ?]
+17.11.2021 21:51:39.673 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 21:51:39.674 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@2306e337
+17.11.2021 21:51:39.692 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@35693281
+17.11.2021 21:51:39.714 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5b22f955
+17.11.2021 21:51:48.481 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 21:51:48.493 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 21:51:48.548 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 21:51:48.549 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 21:51:48.550 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 21:51:48.627 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 21:51:48.628 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 21:51:48.630 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 21:51:48.635 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 21:51:48.642 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:51:48.644 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:51:48.645 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:51:48.645 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:51:48.645 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 21:51:48.652 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 21:51:48.658 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 21:51:48.670 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 21:51:48.678 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 21:51:48.703 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 21:51:48.704 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 21:51:48.705 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 21:51:48.705 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 21:51:48.705 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 21:51:48.705 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 21:51:48.706 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 21:51:48.706 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 21:51:48.706 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 21:51:48.707 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 21:51:48.716 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 21:51:48.717 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 21:51:48.718 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 21:51:48.718 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 21:51:48.719 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 21:51:48.719 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 21:51:48.719 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 21:51:48.719 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 21:51:48.720 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 21:51:48.720 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 21:51:48.720 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 21:51:48.720 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 21:51:48.721 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 21:51:48.722 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 21:51:48.723 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 21:51:48.723 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 21:51:48.723 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 21:51:48.724 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 21:51:48.724 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 21:51:48.724 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 21:51:48.724 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 21:51:48.724 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 21:51:48.724 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 21:51:48.725 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 21:51:48.725 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 21:51:48.726 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 21:51:48.842 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5c10f1c3
+17.11.2021 21:51:48.845 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 21:51:48.849 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 21:51:48.855 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 21:51:48.865 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 21:51:48.867 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 21:51:48.946 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 21:51:48.962 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL query
+17.11.2021 21:51:48.971 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@74fa5852
+17.11.2021 21:51:48.972 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, tel_number from Customer where id = ?]
+17.11.2021 21:51:48.980 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 21:51:48.998 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7a3da8bd
+17.11.2021 21:51:49.020 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7e023322
+17.11.2021 21:51:49.038 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@3b00a286
+17.11.2021 22:04:56.104 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 22:04:56.121 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 22:04:56.189 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 22:04:56.191 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 22:04:56.194 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 22:04:56.272 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 22:04:56.274 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 22:04:56.277 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 22:04:56.282 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 22:04:56.291 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:04:56.293 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:04:56.293 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:04:56.294 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:04:56.294 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:04:56.299 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 22:04:56.307 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 22:04:56.321 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 22:04:56.332 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 22:04:56.365 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 22:04:56.365 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 22:04:56.365 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 22:04:56.366 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 22:04:56.366 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 22:04:56.366 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 22:04:56.366 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 22:04:56.367 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 22:04:56.367 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 22:04:56.370 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 22:04:56.375 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 22:04:56.375 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 22:04:56.375 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 22:04:56.375 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 22:04:56.376 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 22:04:56.376 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 22:04:56.376 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 22:04:56.377 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 22:04:56.377 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 22:04:56.377 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 22:04:56.377 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 22:04:56.378 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 22:04:56.378 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 22:04:56.378 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 22:04:56.378 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 22:04:56.378 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 22:04:56.379 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 22:04:56.379 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 22:04:56.379 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 22:04:56.379 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 22:04:56.379 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 22:04:56.379 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 22:04:56.380 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 22:04:56.380 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 22:04:56.380 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 22:04:56.382 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 22:04:56.507 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5c10f1c3
+17.11.2021 22:04:56.509 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 22:04:56.512 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 22:04:56.518 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 22:04:56.530 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 22:04:56.532 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 22:04:56.612 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 22:04:56.629 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@1123df32
+17.11.2021 22:04:56.653 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@1fe42366
+17.11.2021 22:04:56.658 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL query
+17.11.2021 22:04:56.658 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, tel_number from Customer where id = ?]
+17.11.2021 22:04:56.663 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 22:04:56.672 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@1bdbb442
+17.11.2021 22:04:56.690 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5ed9295d
+17.11.2021 22:04:56.692 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'id' to property 'id' of type 'java.lang.Integer'
+17.11.2021 22:04:56.696 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'first_name' to property 'firstName' of type 'java.lang.String'
+17.11.2021 22:04:56.697 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'last_name' to property 'lastName' of type 'java.lang.String'
+17.11.2021 22:04:56.697 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'tel_number' to property 'telNumber' of type 'java.lang.String'
+17.11.2021 22:04:56.707 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@510ca7fb
+17.11.2021 22:04:56.722 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL update
+17.11.2021 22:04:56.724 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@6f4d51af
+17.11.2021 22:04:56.724 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [insert into Customer(first_name, last_name, tel_number) values(?, ?, ?)]
+17.11.2021 22:04:56.724 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 22:14:03.200 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 22:14:03.216 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 22:14:03.273 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 22:14:03.275 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 22:14:03.276 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 22:14:03.353 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 22:14:03.355 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 22:14:03.356 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 22:14:03.361 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 22:14:03.369 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:14:03.371 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:14:03.371 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:14:03.372 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:14:03.372 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:14:03.377 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 22:14:03.383 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 22:14:03.395 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 22:14:03.404 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 22:14:03.428 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 22:14:03.429 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 22:14:03.429 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 22:14:03.429 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 22:14:03.429 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 22:14:03.430 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 22:14:03.430 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 22:14:03.430 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 22:14:03.430 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 22:14:03.432 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 22:14:03.436 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 22:14:03.437 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 22:14:03.437 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 22:14:03.437 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 22:14:03.438 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 22:14:03.438 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 22:14:03.438 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 22:14:03.438 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 22:14:03.438 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 22:14:03.439 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 22:14:03.439 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 22:14:03.439 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 22:14:03.439 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 22:14:03.439 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 22:14:03.440 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 22:14:03.440 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 22:14:03.440 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 22:14:03.440 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 22:14:03.440 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 22:14:03.441 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 22:14:03.441 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 22:14:03.441 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 22:14:03.442 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 22:14:03.442 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 22:14:03.442 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 22:14:03.445 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 22:14:03.558 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5c10f1c3
+17.11.2021 22:14:03.561 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 22:14:03.564 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 22:14:03.569 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 22:14:03.579 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 22:14:03.581 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 22:14:03.662 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 22:14:03.669 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL query
+17.11.2021 22:14:03.670 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, tel_number from Customer where id = ?]
+17.11.2021 22:14:03.675 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@12de9d20
+17.11.2021 22:14:03.678 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 22:14:03.696 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@1c19710b
+17.11.2021 22:14:03.715 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@1826f650
+17.11.2021 22:14:03.723 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'id' to property 'id' of type 'java.lang.Integer'
+17.11.2021 22:14:03.731 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'first_name' to property 'firstName' of type 'java.lang.String'
+17.11.2021 22:14:03.733 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'last_name' to property 'lastName' of type 'java.lang.String'
+17.11.2021 22:14:03.734 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'tel_number' to property 'telNumber' of type 'java.lang.String'
+17.11.2021 22:14:03.735 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5d247b30
+17.11.2021 22:14:03.750 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@3b75da29
+17.11.2021 22:14:03.760 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL update
+17.11.2021 22:14:03.760 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [update Customer set first_name = ?, last_name = ?, tel_number = ? where id = ?]
+17.11.2021 22:14:03.760 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 22:14:03.767 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@6c336565
+17.11.2021 22:14:44.444 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 22:14:44.460 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 22:14:44.519 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 22:14:44.521 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 22:14:44.523 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 22:14:44.615 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 22:14:44.617 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 22:14:44.618 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 22:14:44.624 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 22:14:44.633 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:14:44.635 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:14:44.635 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:14:44.636 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:14:44.636 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:14:44.641 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 22:14:44.648 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 22:14:44.668 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 22:14:44.680 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 22:14:44.703 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 22:14:44.703 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 22:14:44.704 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 22:14:44.704 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 22:14:44.704 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 22:14:44.704 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 22:14:44.704 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 22:14:44.704 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 22:14:44.704 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 22:14:44.706 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 22:14:44.710 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 22:14:44.710 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 22:14:44.711 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 22:14:44.711 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 22:14:44.712 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 22:14:44.712 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 22:14:44.712 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 22:14:44.713 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 22:14:44.713 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 22:14:44.713 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 22:14:44.713 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 22:14:44.713 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 22:14:44.714 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 22:14:44.714 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 22:14:44.714 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 22:14:44.714 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 22:14:44.714 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 22:14:44.714 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 22:14:44.715 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 22:14:44.715 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 22:14:44.716 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 22:14:44.717 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 22:14:44.718 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 22:14:44.718 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 22:14:44.718 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 22:14:44.720 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 22:14:44.840 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5c10f1c3
+17.11.2021 22:14:44.842 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 22:14:44.845 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 22:14:44.852 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 22:14:44.871 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 22:14:44.875 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 22:14:44.943 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17.11.2021 22:14:44.958 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5c23e506
+17.11.2021 22:14:44.982 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@52e400f2
+17.11.2021 22:14:44.999 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@56db8e76
+17.11.2021 22:14:45.001 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL query
+17.11.2021 22:14:45.001 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, tel_number from Customer where id = ?]
+17.11.2021 22:14:45.005 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 22:14:45.018 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@13d90ac9
+17.11.2021 22:14:45.030 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'id' to property 'id' of type 'java.lang.Integer'
+17.11.2021 22:14:45.034 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5011d661
+17.11.2021 22:14:45.034 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'first_name' to property 'firstName' of type 'java.lang.String'
+17.11.2021 22:14:45.035 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'last_name' to property 'lastName' of type 'java.lang.String'
+17.11.2021 22:14:45.036 [main] DEBUG  o.s.j.c.BeanPropertyRowMapper - Mapping column 'tel_number' to property 'telNumber' of type 'java.lang.String'
+17.11.2021 22:14:45.051 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@2280bf01
+17.11.2021 22:14:45.064 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL update
+17.11.2021 22:14:45.066 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [update Customer set first_name = ?, last_name = ?, tel_number = ? where id = ?]
+17.11.2021 22:14:45.067 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 22:18:31.511 [main] DEBUG  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c64cb25
+17.11.2021 22:18:31.528 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17.11.2021 22:18:31.589 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CarRepositoryImpl.class]
+17.11.2021 22:18:31.591 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/dao/impl/CustomerRepository.class]
+17.11.2021 22:18:31.592 [main] DEBUG  o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/timur_kotkovski/Programming/it-academy/homework to GITHUB/lecture-14/lecture-14/target/classes/by/itacademy/javaenterprise/kotkovski/service/CarService.class]
+17.11.2021 22:18:31.667 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+17.11.2021 22:18:31.669 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+17.11.2021 22:18:31.670 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17.11.2021 22:18:31.676 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springConfig'
+17.11.2021 22:18:31.685 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.url' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:18:31.688 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.username' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:18:31.688 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'dp.password' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:18:31.688 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.driver' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:18:31.689 [main] DEBUG  o.s.c.e.PropertySourcesPropertyResolver - Found key 'db.max.pool.size' in PropertySource 'class path resource [application.properties]' with value of type String
+17.11.2021 22:18:31.694 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carRepositoryImpl'
+17.11.2021 22:18:31.702 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+17.11.2021 22:18:31.717 [main] DEBUG  c.z.h.HikariConfig - Driver class org.mariadb.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd
+17.11.2021 22:18:31.734 [main] DEBUG  c.z.h.HikariConfig - HikariPool-1 - configuration:
+17.11.2021 22:18:31.763 [main] DEBUG  c.z.h.HikariConfig - allowPoolSuspension.............false
+17.11.2021 22:18:31.765 [main] DEBUG  c.z.h.HikariConfig - autoCommit......................true
+17.11.2021 22:18:31.766 [main] DEBUG  c.z.h.HikariConfig - catalog.........................none
+17.11.2021 22:18:31.766 [main] DEBUG  c.z.h.HikariConfig - connectionInitSql...............none
+17.11.2021 22:18:31.766 [main] DEBUG  c.z.h.HikariConfig - connectionTestQuery.............none
+17.11.2021 22:18:31.766 [main] DEBUG  c.z.h.HikariConfig - connectionTimeout...............30000
+17.11.2021 22:18:31.766 [main] DEBUG  c.z.h.HikariConfig - dataSource......................none
+17.11.2021 22:18:31.767 [main] DEBUG  c.z.h.HikariConfig - dataSourceClassName.............none
+17.11.2021 22:18:31.767 [main] DEBUG  c.z.h.HikariConfig - dataSourceJNDI..................none
+17.11.2021 22:18:31.768 [main] DEBUG  c.z.h.HikariConfig - dataSourceProperties............{password=<masked>}
+17.11.2021 22:18:31.773 [main] DEBUG  c.z.h.HikariConfig - driverClassName................."org.mariadb.jdbc.Driver"
+17.11.2021 22:18:31.774 [main] DEBUG  c.z.h.HikariConfig - exceptionOverrideClassName......none
+17.11.2021 22:18:31.775 [main] DEBUG  c.z.h.HikariConfig - healthCheckProperties...........{}
+17.11.2021 22:18:31.776 [main] DEBUG  c.z.h.HikariConfig - healthCheckRegistry.............none
+17.11.2021 22:18:31.776 [main] DEBUG  c.z.h.HikariConfig - idleTimeout.....................600000
+17.11.2021 22:18:31.776 [main] DEBUG  c.z.h.HikariConfig - initializationFailTimeout.......1
+17.11.2021 22:18:31.777 [main] DEBUG  c.z.h.HikariConfig - isolateInternalQueries..........false
+17.11.2021 22:18:31.777 [main] DEBUG  c.z.h.HikariConfig - jdbcUrl.........................jdbc:mariadb://localhost:3306/car_service
+17.11.2021 22:18:31.777 [main] DEBUG  c.z.h.HikariConfig - keepaliveTime...................0
+17.11.2021 22:18:31.777 [main] DEBUG  c.z.h.HikariConfig - leakDetectionThreshold..........0
+17.11.2021 22:18:31.777 [main] DEBUG  c.z.h.HikariConfig - maxLifetime.....................1800000
+17.11.2021 22:18:31.778 [main] DEBUG  c.z.h.HikariConfig - maximumPoolSize.................20
+17.11.2021 22:18:31.778 [main] DEBUG  c.z.h.HikariConfig - metricRegistry..................none
+17.11.2021 22:18:31.778 [main] DEBUG  c.z.h.HikariConfig - metricsTrackerFactory...........none
+17.11.2021 22:18:31.778 [main] DEBUG  c.z.h.HikariConfig - minimumIdle.....................20
+17.11.2021 22:18:31.778 [main] DEBUG  c.z.h.HikariConfig - password........................<masked>
+17.11.2021 22:18:31.779 [main] DEBUG  c.z.h.HikariConfig - poolName........................"HikariPool-1"
+17.11.2021 22:18:31.779 [main] DEBUG  c.z.h.HikariConfig - readOnly........................false
+17.11.2021 22:18:31.779 [main] DEBUG  c.z.h.HikariConfig - registerMbeans..................false
+17.11.2021 22:18:31.779 [main] DEBUG  c.z.h.HikariConfig - scheduledExecutor...............none
+17.11.2021 22:18:31.779 [main] DEBUG  c.z.h.HikariConfig - schema..........................none
+17.11.2021 22:18:31.780 [main] DEBUG  c.z.h.HikariConfig - threadFactory...................internal
+17.11.2021 22:18:31.780 [main] DEBUG  c.z.h.HikariConfig - transactionIsolation............default
+17.11.2021 22:18:31.780 [main] DEBUG  c.z.h.HikariConfig - username........................"root"
+17.11.2021 22:18:31.780 [main] DEBUG  c.z.h.HikariConfig - validationTimeout...............5000
+17.11.2021 22:18:31.782 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+17.11.2021 22:18:31.906 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@5c10f1c3
+17.11.2021 22:18:31.911 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+17.11.2021 22:18:31.914 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerRepository'
+17.11.2021 22:18:31.920 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+17.11.2021 22:18:31.933 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'customerRepository' via constructor to bean named 'jdbcTemplate'
+17.11.2021 22:18:31.939 [main] DEBUG  o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'carService'
+17.11.2021 22:18:31.981 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL update
+17.11.2021 22:18:31.982 [main] DEBUG  o.s.j.c.JdbcTemplate - Executing prepared SQL statement [delete from Customer where id = ?]
+17.11.2021 22:18:31.987 [main] DEBUG  o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+17.11.2021 22:18:32.014 [HikariPool-1 housekeeper] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+17.11.2021 22:18:32.030 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@4a2d2f1d
+17.11.2021 22:18:32.047 [HikariPool-1 connection adder] DEBUG  c.z.h.p.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@44eac828
