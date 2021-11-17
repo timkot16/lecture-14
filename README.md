@@ -4,8 +4,8 @@
 - git repo - done<br>
 - base on hometask 13 - done<br>
 - README with the task - done<br>
-- Add JDBC template from spring<br>
-- Add 1 DAO implementation with JDBC template<br>
+- Add JDBC template from spring - done<br>
+- Add 1 DAO implementation with JDBC template - done<br>
 - Add 1 DAO implementation with Named JDBC template<br>
 </p>
 
