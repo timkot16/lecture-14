@@ -9,10 +9,10 @@
     </preConditions>
     
     <changeSet id="1" author="kotkovski">
-        <sqlFile path="src/main/resources/liquibase/db.migration/V1__Create_cars_table.sql"/>
+        <sqlFile path="liquibase/db/migration/V1__Create_cars_table.sql"/>
     </changeSet>
     <changeSet id="2" author="kotkovski">
-        <sqlFile path="src/main/resources/liquibase/db.migration/V2__Create_customer_table.sql"/>
+        <sqlFile path="liquibase/db/migration/V2__Create_customer_table.sql"/>
     </changeSet>
     <changeSet id="3" author="kotkovski">
         <comment>Create table Operations</comment>

@@ -6,7 +6,8 @@ services:
     image: mariadb:10.6
     restart: always
     environment:
+      MARIADB_USER: root
       MARIADB_ROOT_PASSWORD: secret
-      MARIADB_DATABASE: car_service
+      MARIADB_DATABASE: electronic_service_book
     ports:
-      - 8080:8080
+      - "3306:3306"

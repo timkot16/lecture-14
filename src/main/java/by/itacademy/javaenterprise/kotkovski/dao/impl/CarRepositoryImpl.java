@@ -6,7 +6,7 @@ import by.itacademy.javaenterprise.kotkovski.exception.DAOException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -17,36 +17,69 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Component
+@Repository
 public class CarRepositoryImpl implements CarRepository {
 
     private final static Logger logger = LoggerFactory.getLogger(CarRepositoryImpl.class);
+
+    private final static String FIND_ALL_SQl = "select id, car, vin, number, year, customer_id from Cars";
+    private final static String FIND_BY_ID_SQL = FIND_ALL_SQl + " where id = ?";
+    private final static String FIND_BY_CUSTOMER_ID = "select id, car, vin, number, year from Cars where customer_id = ?";
+    private final static String DELETE = "delete from Cars where id = ?";
+    private final static String SAVE = "insert into Cars(car, vin, number, year) values(?, ?, ?, ?)";
 
     @Autowired
     private DataSource dataSource;
 
     @Autowired
-    private final CustomerRepository customerRepository = new CustomerRepository();
-
-    private final static String FIND_BY_ID_SQL = "select id, car, vin, number, year, customer_id from Cars where id = ?";
-    private final static String FIND_BY_CUSTOMER_ID = "select id, car, vin, number, year from Cars where customer_id = ?";
+    private CustomerRepositoryImpl customerRepository;
 
     @Override
     public void delete(Integer id) {
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(DELETE)) {
+            preparedStatement.setLong(1, id);
+            connection.setAutoCommit(false);
+            preparedStatement.executeUpdate();
+            connection.commit();
+        } catch (SQLException e) {
+            logger.error("Failed to delete car with current id {}", id, e);
+            throw new DAOException(e);
+        }
     }
 
     @Override
     public Car save(Car car) {
-        return null;
-    }
-
-    @Override
-    public void update(Integer id, Car car) {
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement statement = connection.prepareStatement(SAVE)) {
+            connection.setAutoCommit(false);
+            statement.setString(1, car.getCar());
+            statement.setString(2, car.getVin());
+            statement.setString(3, car.getNumber());
+            statement.setInt(4, car.getYear());
+            statement.executeUpdate();
+            connection.commit();
+            return car;
+        } catch (SQLException e) {
+            logger.error("Failed to save {}", car, e);
+            throw new DAOException(e);
+        }
     }
 
     @Override
     public List<Car> findAll() {
-        return null;
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(FIND_ALL_SQl)) {
+            ResultSet rs = preparedStatement.executeQuery();
+            List<Car> cars = new ArrayList<>();
+            while (rs.next()) {
+                cars.add(buildCar(rs));
+            }
+            return cars;
+        } catch (SQLException e) {
+            logger.error("Failed to find all cars", e);
+            throw new DAOException(e);
+        }
     }
 
     @Override

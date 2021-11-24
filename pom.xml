@@ -15,8 +15,8 @@
         <maven.compiler.target>11</maven.compiler.target>
         <slf4j-version>1.7.32</slf4j-version>
         <logback-version>1.2.7</logback-version>
-        <spring-version>5.3.12</spring-version>
-        <mariadb-version>2.7.3</mariadb-version>
+        <spring-version>5.3.13</spring-version>
+        <mariadb.driver-version>2.7.3</mariadb.driver-version>
         <hikari-varsion>5.0.0</hikari-varsion>
         <liquibase-version>4.6.1</liquibase-version>
         <liquibase-maven-plugin-version>4.2.0</liquibase-maven-plugin-version>
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
-            <version>${mariadb-version}</version>
+            <version>${mariadb.driver-version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -99,7 +99,7 @@
                 <artifactId>liquibase-maven-plugin</artifactId>
                 <version>${liquibase-maven-plugin-version}</version>
                 <configuration>
-                    <propertyFile>src/main/resources/liquibase/liquibase.properties</propertyFile>
+                    <propertyFile>liquibase/liquibase.properties</propertyFile>
                 </configuration>
             </plugin>
         </plugins>
