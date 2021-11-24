@@ -1,25 +1,20 @@
-<h1 align="center">Hometask lecture 14</h1>
-<h3>Tasks</h3>
-<p> 
-- git repo - done<br>
-- base on hometask 13 - done<br>
-- README with the task - done<br>
-- Add JDBC template from spring - done<br>
-- Add 1 DAO implementation with JDBC template - done<br>
-- Add 1 DAO implementation with Named JDBC template<br>
-</p>
+# Hometask lecture 14
 
-<h4>Additional for 10</h4>
+### Tasks
+- git repo - done
+- base on hometask 13 - done
+- README with the task - done
+- Add JDBC template from spring - done
+- Add 1 DAO implementation with JDBC template - done
+- Add 1 DAO implementation with Named JDBC template
 
-<p>
-- docker-compose - done<br>
-- Tests for DAO<br>
-</p>
+#### Additional for 10
+- docker-compose - done
+- Tests for DAO
 
-<h3>Project setup</h3>
+### Project setup
+> mvn clean package
 
-<p>
-1. mvn clean package<br>
-2. docker-compose up<br>
-3. mvn liquibase:update
-</p>
+> docker-compose up -d
+
+> mvn liquibase:update

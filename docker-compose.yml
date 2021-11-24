@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+
+  db:
+    image: mariadb:10.6
+    restart: always
+    environment:
+      MARIADB_USER: root
+      MARIADB_ROOT_PASSWORD: secret
+      MARIADB_DATABASE: electronic_service_book
+    ports:
+      - "3306:3306"
